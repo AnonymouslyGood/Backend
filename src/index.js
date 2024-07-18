@@ -6,12 +6,6 @@ dotenv.config({
     path: './env'
 });
 
-connectDB();
+connectDB()
 
-const app = express();
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+console.log('Services at: ', process.env.PORT)
